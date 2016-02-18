@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
         mTextView = (TextView) findViewById(R.id.textView);
         mButton = (Button) findViewById(R.id.button);
         button1 = (Button) findViewById(R.id.button1);
+
+        Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_LONG).show();
     }
 
     @Override
